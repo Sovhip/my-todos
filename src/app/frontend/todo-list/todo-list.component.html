@@ -1,1 +1,25 @@
-<p>todo-list works!</p>
+
+<table class="table">
+<thead>
+<tr>
+<th>#</th>
+<th>action</th>
+<th>duedate</th>
+<th>done?</th>
+<th></th>
+</tr>
+
+
+</thead>
+
+<tbody>
+<tr *ngFor = "let todo of todos">
+
+        <app-todo-item [todo] = "todo"></app-todo-item> 
+</tr>
+
+</tbody>
+
+</table>
+
+<!-- <p>todo-list works!</p> -->
