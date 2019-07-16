@@ -3,6 +3,9 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { LoginComponent } from './backend/login/login.component';
 import { MainComponent } from './frontend/main/main.component';
+import { TodoItemComponent } from './frontend/todo-item/todo-item.component';
+import {TodoListComponent} from './frontend/todo-list/todo-list.component';
+
 
 const routes: Routes = [
   {path:'login', component:LoginComponent},
@@ -16,4 +19,4 @@ const routes: Routes = [
 })
 export class AppRoutingModule { }
 
-export const routingComponent = [LoginComponent, MainComponent] 
+export const routingComponent = [LoginComponent, MainComponent, TodoListComponent, TodoItemComponent ]
